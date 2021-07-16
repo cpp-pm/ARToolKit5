@@ -1,4 +1,8 @@
 @PACKAGE_INIT@
 
+if(@_is_windows@)
+  find_package(pthreads-win32 CONFIG REQUIRED)
+endif()
+
 include("${CMAKE_CURRENT_LIST_DIR}/@TARGETS_EXPORT_NAME@.cmake")
 check_required_components("@PROJECT_NAME@")
