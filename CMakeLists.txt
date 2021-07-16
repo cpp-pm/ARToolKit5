@@ -4,9 +4,10 @@ include(${CMAKE_CURRENT_SOURCE_DIR}/HunterGate.cmake)
 HunterGate(
     URL "https://github.com/cpp-pm/hunter/archive/v0.23.312.tar.gz"
     SHA1 "42311324f6b859983d833cffc2151d0b86b8bea4"
+    FILEPATH "${CMAKE_CURRENT_SOURCE_DIR}/../Snap/WarpEngine/cmake/HunterConfig.cmake"
 )
 
-project(ARToolkit)
+project(ARToolkit VERSION 5.4)
 
 hunter_add_package(Eigen)
 find_package(Eigen3 REQUIRED)
@@ -64,7 +65,7 @@ elseif(UNIX) #assume Linux
   set(ARTOOLKIT_VIDEO_SOURCES_EXTRA ${ARTOOLKIT_VIDEO_SOURCES_LINUX})
 elseif(WIN32)
   set(_is_windows TRUE)
-  set(ARTOOLKIT_SOURCES_EXTRA ${ARTOOLKIT_GL_SOURCES_DESKTOP} ${ARTOOLKIT_SOURCES_WINDOWS})
+  set(ARTOOLKIT_SOURCES_EXTRA ${ARTOOLKIT_GL_SOURCES_DESKTOP})
   set(ARTOOLKIT_VIDEO_SOURCES_EXTRA ${ARTOOLKIT_VIDEO_SOURCES_WINDOWS})
   hunter_add_package(pthreads-win32)
   find_package(pthreads-win32 CONFIG REQUIRED)
@@ -72,7 +73,7 @@ endif()
 
 add_library(ARToolkit STATIC ${ARTOOLKIT_SOURCES} ${ARTOOLKIT_KPM_SOURCES} ${ARTOOLKIT_SOURCES_EXTRA})
 
-target_link_libraries(ARToolkit FreeGLUT::freeglut_static OpenGL::Registry-Headers)
+target_link_libraries(ARToolkit FreeGLUT::freeglut_static OpenGL::Registry-Headers ${OpenCV_LIBS} ${OPENSCENEGRAPH_LIBRARIES})
 
 add_library(ARToolkitVideo STATIC ${ARTOOLKIT_VIDEO_SOURCES} ${ARTOOLKIT_VIDEO_SOURCES_EXTRA})
 
@@ -84,10 +85,53 @@ if(WIN32)
   target_link_libraries(ARToolkit pthreads-win32::pthreads)
 endif()
 
-install(DIRECTORY ${CMAKE_CURRENT_SOURCE_DIR}/include/ DESTINATION include)
+# Introduce variables:
+# * CMAKE_INSTALL_LIBDIR
+# * CMAKE_INSTALL_BINDIR
+# * CMAKE_INSTALL_INCLUDEDIR
+include(GNUInstallDirs)
 
-install(TARGETS ARToolkit ARToolkitVideo
-  RUNTIME DESTINATION bin
-  LIBRARY DESTINATION lib
-  ARCHIVE DESTINATION lib
+set(GENERATED_DIR "${CMAKE_CURRENT_BINARY_DIR}/generated")
+set(VERSION_CONFIG "${GENERATED_DIR}/${PROJECT_NAME}ConfigVersion.cmake")
+set(PROJECT_CONFIG "${GENERATED_DIR}/${PROJECT_NAME}Config.cmake")
+
+set(CONFIG_INSTALL_DIR "${CMAKE_INSTALL_LIBDIR}/cmake/${PROJECT_NAME}")
+
+set(TARGETS_EXPORT_NAME "${PROJECT_NAME}Targets")
+set(NAMESPACE "${PROJECT_NAME}::")
+
+include(CMakePackageConfigHelpers)
+write_basic_package_version_file(
+    "${VERSION_CONFIG}" COMPATIBILITY ExactVersion
+)
+
+configure_package_config_file(
+    "cmake/Config.cmake.in"
+    "${PROJECT_CONFIG}"
+    INSTALL_DESTINATION "${CONFIG_INSTALL_DIR}"
+)
+
+install(
+    TARGETS ARToolkit ARToolkitVideo
+    EXPORT "${TARGETS_EXPORT_NAME}"
+    INCLUDES DESTINATION "${CMAKE_INSTALL_INCLUDEDIR}"
+    RUNTIME DESTINATION "${CMAKE_INSTALL_BINDIR}"
+    LIBRARY DESTINATION "${CMAKE_INSTALL_LIBDIR}"
+    ARCHIVE DESTINATION "${CMAKE_INSTALL_LIBDIR}"
+)
+
+install(
+    DIRECTORY ${CMAKE_CURRENT_SOURCE_DIR}/include/
+    DESTINATION ${CMAKE_INSTALL_INCLUDEDIR}/${PROJECT_NAME}
+)
+
+install(
+    FILES "${PROJECT_CONFIG}" "${VERSION_CONFIG}"
+    DESTINATION "${CONFIG_INSTALL_DIR}"
+)
+
+install(
+    EXPORT "${TARGETS_EXPORT_NAME}"
+    NAMESPACE "${NAMESPACE}"
+    DESTINATION "${CONFIG_INSTALL_DIR}"
 )
