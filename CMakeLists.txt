@@ -73,7 +73,7 @@ endif()
 
 add_library(ARToolkit STATIC ${ARTOOLKIT_SOURCES} ${ARTOOLKIT_KPM_SOURCES} ${ARTOOLKIT_SOURCES_EXTRA})
 
-target_link_libraries(ARToolkit FreeGLUT::freeglut_static OpenGL::Registry-Headers ${OpenCV_LIBS} ${OPENSCENEGRAPH_LIBRARIES})
+target_link_libraries(ARToolkit FreeGLUT::freeglut_static OpenGL::Registry-Headers Eigen3::Eigen ${OpenCV_LIBS} ${OPENSCENEGRAPH_LIBRARIES})
 
 add_library(ARToolkitVideo STATIC ${ARTOOLKIT_VIDEO_SOURCES} ${ARTOOLKIT_VIDEO_SOURCES_EXTRA})
 

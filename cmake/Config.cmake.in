@@ -1,5 +1,11 @@
 @PACKAGE_INIT@
 
+find_package(Eigen3 REQUIRED)
+find_package(OpenCV REQUIRED)
+find_package(OpenSceneGraph CONFIG REQUIRED)
+find_package(FreeGLUT CONFIG REQUIRED)
+find_package(OpenGL-Registry CONFIG REQUIRED)
+
 if(@_is_windows@)
   find_package(pthreads-win32 CONFIG REQUIRED)
 endif()
