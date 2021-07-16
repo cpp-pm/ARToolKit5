@@ -11,81 +11,19 @@ set(ARTOOLKIT_SOURCES
   ${CMAKE_CURRENT_SOURCE_DIR}/lib/SRC/AR/arGetTransMatStereo.c
   ${CMAKE_CURRENT_SOURCE_DIR}/lib/SRC/AR/arImageProc.c
   ${CMAKE_CURRENT_SOURCE_DIR}/lib/SRC/AR/arLabeling.c
-  ${CMAKE_CURRENT_SOURCE_DIR}/lib/SRC/AR/arLabelingSub/arLabelingSubDBI3C.c
-  ${CMAKE_CURRENT_SOURCE_DIR}/lib/SRC/AR/arLabelingSub/arLabelingSubDBI3C565.c
-  ${CMAKE_CURRENT_SOURCE_DIR}/lib/SRC/AR/arLabelingSub/arLabelingSubDBI3CA.c
-  ${CMAKE_CURRENT_SOURCE_DIR}/lib/SRC/AR/arLabelingSub/arLabelingSubDBI3CA4444.c
-  ${CMAKE_CURRENT_SOURCE_DIR}/lib/SRC/AR/arLabelingSub/arLabelingSubDBI3CA5551.c
-  ${CMAKE_CURRENT_SOURCE_DIR}/lib/SRC/AR/arLabelingSub/arLabelingSubDBIA3C.c
+  ${CMAKE_CURRENT_SOURCE_DIR}/lib/SRC/AR/arLabelingSub/arLabelingPrivate.h
+  ${CMAKE_CURRENT_SOURCE_DIR}/lib/SRC/AR/arLabelingSub/arLabelingSub.h
   ${CMAKE_CURRENT_SOURCE_DIR}/lib/SRC/AR/arLabelingSub/arLabelingSubDBIC.c
-  ${CMAKE_CURRENT_SOURCE_DIR}/lib/SRC/AR/arLabelingSub/arLabelingSubDBICY.c
-  ${CMAKE_CURRENT_SOURCE_DIR}/lib/SRC/AR/arLabelingSub/arLabelingSubDBIYC.c
-  ${CMAKE_CURRENT_SOURCE_DIR}/lib/SRC/AR/arLabelingSub/arLabelingSubDBR3C.c
-  ${CMAKE_CURRENT_SOURCE_DIR}/lib/SRC/AR/arLabelingSub/arLabelingSubDBR3C565.c
-  ${CMAKE_CURRENT_SOURCE_DIR}/lib/SRC/AR/arLabelingSub/arLabelingSubDBR3CA.c
-  ${CMAKE_CURRENT_SOURCE_DIR}/lib/SRC/AR/arLabelingSub/arLabelingSubDBR3CA4444.c
-  ${CMAKE_CURRENT_SOURCE_DIR}/lib/SRC/AR/arLabelingSub/arLabelingSubDBR3CA5551.c
-  ${CMAKE_CURRENT_SOURCE_DIR}/lib/SRC/AR/arLabelingSub/arLabelingSubDBRA3C.c
   ${CMAKE_CURRENT_SOURCE_DIR}/lib/SRC/AR/arLabelingSub/arLabelingSubDBRC.c
-  ${CMAKE_CURRENT_SOURCE_DIR}/lib/SRC/AR/arLabelingSub/arLabelingSubDBRCY.c
-  ${CMAKE_CURRENT_SOURCE_DIR}/lib/SRC/AR/arLabelingSub/arLabelingSubDBRYC.c
   ${CMAKE_CURRENT_SOURCE_DIR}/lib/SRC/AR/arLabelingSub/arLabelingSubDBZ.c
-  ${CMAKE_CURRENT_SOURCE_DIR}/lib/SRC/AR/arLabelingSub/arLabelingSubDWI3C.c
-  ${CMAKE_CURRENT_SOURCE_DIR}/lib/SRC/AR/arLabelingSub/arLabelingSubDWI3C565.c
-  ${CMAKE_CURRENT_SOURCE_DIR}/lib/SRC/AR/arLabelingSub/arLabelingSubDWI3CA.c
-  ${CMAKE_CURRENT_SOURCE_DIR}/lib/SRC/AR/arLabelingSub/arLabelingSubDWI3CA4444.c
-  ${CMAKE_CURRENT_SOURCE_DIR}/lib/SRC/AR/arLabelingSub/arLabelingSubDWI3CA5551.c
-  ${CMAKE_CURRENT_SOURCE_DIR}/lib/SRC/AR/arLabelingSub/arLabelingSubDWIA3C.c
   ${CMAKE_CURRENT_SOURCE_DIR}/lib/SRC/AR/arLabelingSub/arLabelingSubDWIC.c
-  ${CMAKE_CURRENT_SOURCE_DIR}/lib/SRC/AR/arLabelingSub/arLabelingSubDWICY.c
-  ${CMAKE_CURRENT_SOURCE_DIR}/lib/SRC/AR/arLabelingSub/arLabelingSubDWIYC.c
-  ${CMAKE_CURRENT_SOURCE_DIR}/lib/SRC/AR/arLabelingSub/arLabelingSubDWR3C.c
-  ${CMAKE_CURRENT_SOURCE_DIR}/lib/SRC/AR/arLabelingSub/arLabelingSubDWR3C565.c
-  ${CMAKE_CURRENT_SOURCE_DIR}/lib/SRC/AR/arLabelingSub/arLabelingSubDWR3CA.c
-  ${CMAKE_CURRENT_SOURCE_DIR}/lib/SRC/AR/arLabelingSub/arLabelingSubDWR3CA4444.c
-  ${CMAKE_CURRENT_SOURCE_DIR}/lib/SRC/AR/arLabelingSub/arLabelingSubDWR3CA5551.c
-  ${CMAKE_CURRENT_SOURCE_DIR}/lib/SRC/AR/arLabelingSub/arLabelingSubDWRA3C.c
   ${CMAKE_CURRENT_SOURCE_DIR}/lib/SRC/AR/arLabelingSub/arLabelingSubDWRC.c
-  ${CMAKE_CURRENT_SOURCE_DIR}/lib/SRC/AR/arLabelingSub/arLabelingSubDWRCY.c
-  ${CMAKE_CURRENT_SOURCE_DIR}/lib/SRC/AR/arLabelingSub/arLabelingSubDWRYC.c
   ${CMAKE_CURRENT_SOURCE_DIR}/lib/SRC/AR/arLabelingSub/arLabelingSubDWZ.c
-  ${CMAKE_CURRENT_SOURCE_DIR}/lib/SRC/AR/arLabelingSub/arLabelingSubEBI3C.c
-  ${CMAKE_CURRENT_SOURCE_DIR}/lib/SRC/AR/arLabelingSub/arLabelingSubEBI3C565.c
-  ${CMAKE_CURRENT_SOURCE_DIR}/lib/SRC/AR/arLabelingSub/arLabelingSubEBI3CA.c
-  ${CMAKE_CURRENT_SOURCE_DIR}/lib/SRC/AR/arLabelingSub/arLabelingSubEBI3CA4444.c
-  ${CMAKE_CURRENT_SOURCE_DIR}/lib/SRC/AR/arLabelingSub/arLabelingSubEBI3CA5551.c
-  ${CMAKE_CURRENT_SOURCE_DIR}/lib/SRC/AR/arLabelingSub/arLabelingSubEBIA3C.c
   ${CMAKE_CURRENT_SOURCE_DIR}/lib/SRC/AR/arLabelingSub/arLabelingSubEBIC.c
-  ${CMAKE_CURRENT_SOURCE_DIR}/lib/SRC/AR/arLabelingSub/arLabelingSubEBICY.c
-  ${CMAKE_CURRENT_SOURCE_DIR}/lib/SRC/AR/arLabelingSub/arLabelingSubEBIYC.c
-  ${CMAKE_CURRENT_SOURCE_DIR}/lib/SRC/AR/arLabelingSub/arLabelingSubEBR3C.c
-  ${CMAKE_CURRENT_SOURCE_DIR}/lib/SRC/AR/arLabelingSub/arLabelingSubEBR3C565.c
-  ${CMAKE_CURRENT_SOURCE_DIR}/lib/SRC/AR/arLabelingSub/arLabelingSubEBR3CA.c
-  ${CMAKE_CURRENT_SOURCE_DIR}/lib/SRC/AR/arLabelingSub/arLabelingSubEBR3CA4444.c
-  ${CMAKE_CURRENT_SOURCE_DIR}/lib/SRC/AR/arLabelingSub/arLabelingSubEBR3CA5551.c
-  ${CMAKE_CURRENT_SOURCE_DIR}/lib/SRC/AR/arLabelingSub/arLabelingSubEBRA3C.c
   ${CMAKE_CURRENT_SOURCE_DIR}/lib/SRC/AR/arLabelingSub/arLabelingSubEBRC.c
-  ${CMAKE_CURRENT_SOURCE_DIR}/lib/SRC/AR/arLabelingSub/arLabelingSubEBRCY.c
-  ${CMAKE_CURRENT_SOURCE_DIR}/lib/SRC/AR/arLabelingSub/arLabelingSubEBRYC.c
   ${CMAKE_CURRENT_SOURCE_DIR}/lib/SRC/AR/arLabelingSub/arLabelingSubEBZ.c
-  ${CMAKE_CURRENT_SOURCE_DIR}/lib/SRC/AR/arLabelingSub/arLabelingSubEWI3C.c
-  ${CMAKE_CURRENT_SOURCE_DIR}/lib/SRC/AR/arLabelingSub/arLabelingSubEWI3C565.c
-  ${CMAKE_CURRENT_SOURCE_DIR}/lib/SRC/AR/arLabelingSub/arLabelingSubEWI3CA.c
-  ${CMAKE_CURRENT_SOURCE_DIR}/lib/SRC/AR/arLabelingSub/arLabelingSubEWI3CA4444.c
-  ${CMAKE_CURRENT_SOURCE_DIR}/lib/SRC/AR/arLabelingSub/arLabelingSubEWI3CA5551.c
-  ${CMAKE_CURRENT_SOURCE_DIR}/lib/SRC/AR/arLabelingSub/arLabelingSubEWIA3C.c
   ${CMAKE_CURRENT_SOURCE_DIR}/lib/SRC/AR/arLabelingSub/arLabelingSubEWIC.c
-  ${CMAKE_CURRENT_SOURCE_DIR}/lib/SRC/AR/arLabelingSub/arLabelingSubEWICY.c
-  ${CMAKE_CURRENT_SOURCE_DIR}/lib/SRC/AR/arLabelingSub/arLabelingSubEWIYC.c
-  ${CMAKE_CURRENT_SOURCE_DIR}/lib/SRC/AR/arLabelingSub/arLabelingSubEWR3C.c
-  ${CMAKE_CURRENT_SOURCE_DIR}/lib/SRC/AR/arLabelingSub/arLabelingSubEWR3C565.c
-  ${CMAKE_CURRENT_SOURCE_DIR}/lib/SRC/AR/arLabelingSub/arLabelingSubEWR3CA.c
-  ${CMAKE_CURRENT_SOURCE_DIR}/lib/SRC/AR/arLabelingSub/arLabelingSubEWR3CA4444.c
-  ${CMAKE_CURRENT_SOURCE_DIR}/lib/SRC/AR/arLabelingSub/arLabelingSubEWR3CA5551.c
-  ${CMAKE_CURRENT_SOURCE_DIR}/lib/SRC/AR/arLabelingSub/arLabelingSubEWRA3C.c
   ${CMAKE_CURRENT_SOURCE_DIR}/lib/SRC/AR/arLabelingSub/arLabelingSubEWRC.c
-  ${CMAKE_CURRENT_SOURCE_DIR}/lib/SRC/AR/arLabelingSub/arLabelingSubEWRCY.c
-  ${CMAKE_CURRENT_SOURCE_DIR}/lib/SRC/AR/arLabelingSub/arLabelingSubEWRYC.c
   ${CMAKE_CURRENT_SOURCE_DIR}/lib/SRC/AR/arLabelingSub/arLabelingSubEWZ.c
   ${CMAKE_CURRENT_SOURCE_DIR}/lib/SRC/AR/arPattAttach.c
   ${CMAKE_CURRENT_SOURCE_DIR}/lib/SRC/AR/arPattCreateHandle.c
@@ -116,6 +54,7 @@ set(ARTOOLKIT_SOURCES
   ${CMAKE_CURRENT_SOURCE_DIR}/lib/SRC/AR/paramDistortion.c
   ${CMAKE_CURRENT_SOURCE_DIR}/lib/SRC/AR/paramFile.c
   ${CMAKE_CURRENT_SOURCE_DIR}/lib/SRC/AR/paramGetPerspective.c
+  ${CMAKE_CURRENT_SOURCE_DIR}/lib/SRC/AR/paramGL.c
   ${CMAKE_CURRENT_SOURCE_DIR}/lib/SRC/AR/paramLT.c
   ${CMAKE_CURRENT_SOURCE_DIR}/lib/SRC/AR/vAlloc.c
   ${CMAKE_CURRENT_SOURCE_DIR}/lib/SRC/AR/vDisp.c
@@ -153,21 +92,38 @@ set(ARTOOLKIT_SOURCES
   ${CMAKE_CURRENT_SOURCE_DIR}/lib/SRC/ARMulti/arMultiGetTransMatStereo.c
   ${CMAKE_CURRENT_SOURCE_DIR}/lib/SRC/ARMulti/arMultiReadConfigFile.c
   ${CMAKE_CURRENT_SOURCE_DIR}/lib/SRC/ARosg/arosg.cpp
+  ${CMAKE_CURRENT_SOURCE_DIR}/lib/SRC/ARUtil/crypt.c
+  ${CMAKE_CURRENT_SOURCE_DIR}/lib/SRC/ARUtil/crypt.h
+  ${CMAKE_CURRENT_SOURCE_DIR}/lib/SRC/ARUtil/file_utils.c
+  ${CMAKE_CURRENT_SOURCE_DIR}/lib/SRC/ARUtil/ftw.h
+  ${CMAKE_CURRENT_SOURCE_DIR}/lib/SRC/ARUtil/ioapi.c
+  ${CMAKE_CURRENT_SOURCE_DIR}/lib/SRC/ARUtil/ioapi.h
+  ${CMAKE_CURRENT_SOURCE_DIR}/lib/SRC/ARUtil/log.c
+  ${CMAKE_CURRENT_SOURCE_DIR}/lib/SRC/ARUtil/nftw.c
+  ${CMAKE_CURRENT_SOURCE_DIR}/lib/SRC/ARUtil/profile.c
+  ${CMAKE_CURRENT_SOURCE_DIR}/lib/SRC/ARUtil/system.c
+  ${CMAKE_CURRENT_SOURCE_DIR}/lib/SRC/ARUtil/thread_sub.c
+  ${CMAKE_CURRENT_SOURCE_DIR}/lib/SRC/ARUtil/time.c
+  ${CMAKE_CURRENT_SOURCE_DIR}/lib/SRC/ARUtil/unzip.c
+  ${CMAKE_CURRENT_SOURCE_DIR}/lib/SRC/ARUtil/unzip.h
+  ${CMAKE_CURRENT_SOURCE_DIR}/lib/SRC/ARUtil/zip.c
+  ${CMAKE_CURRENT_SOURCE_DIR}/lib/SRC/ARUtil/zip.h
   ${CMAKE_CURRENT_SOURCE_DIR}/lib/SRC/ARWrapper/AndroidFeatures.cpp
-  ${CMAKE_CURRENT_SOURCE_DIR}/lib/SRC/ARWrapper/AndroidVideoSource.cpp
   ${CMAKE_CURRENT_SOURCE_DIR}/lib/SRC/ARWrapper/ARController.cpp
   ${CMAKE_CURRENT_SOURCE_DIR}/lib/SRC/ARWrapper/ARMarker.cpp
   ${CMAKE_CURRENT_SOURCE_DIR}/lib/SRC/ARWrapper/ARMarkerMulti.cpp
   ${CMAKE_CURRENT_SOURCE_DIR}/lib/SRC/ARWrapper/ARMarkerNFT.cpp
   ${CMAKE_CURRENT_SOURCE_DIR}/lib/SRC/ARWrapper/ARMarkerSquare.cpp
   ${CMAKE_CURRENT_SOURCE_DIR}/lib/SRC/ARWrapper/ARPattern.cpp
-  ${CMAKE_CURRENT_SOURCE_DIR}/lib/SRC/ARWrapper/ARToolKitVideoSource.cpp
   ${CMAKE_CURRENT_SOURCE_DIR}/lib/SRC/ARWrapper/ARToolKitWrapperExportedAPI.cpp
+  ${CMAKE_CURRENT_SOURCE_DIR}/lib/SRC/ARWrapper/ARVideoSource.cpp
   ${CMAKE_CURRENT_SOURCE_DIR}/lib/SRC/ARWrapper/ColorConversion.cpp
   ${CMAKE_CURRENT_SOURCE_DIR}/lib/SRC/ARWrapper/trackingSub.c
-  ${CMAKE_CURRENT_SOURCE_DIR}/lib/SRC/ARWrapper/VideoSource.cpp
+  ${CMAKE_CURRENT_SOURCE_DIR}/lib/SRC/ARWrapper/trackingSub.h
   ${CMAKE_CURRENT_SOURCE_DIR}/lib/SRC/Eden/ALFramework.cpp
+  ${CMAKE_CURRENT_SOURCE_DIR}/lib/SRC/Eden/ALFramework.h
   ${CMAKE_CURRENT_SOURCE_DIR}/lib/SRC/Eden/CWaves.cpp
+  ${CMAKE_CURRENT_SOURCE_DIR}/lib/SRC/Eden/CWaves.h
   ${CMAKE_CURRENT_SOURCE_DIR}/lib/SRC/Eden/EdenError.c
   ${CMAKE_CURRENT_SOURCE_DIR}/lib/SRC/Eden/EdenGLFont.c
   ${CMAKE_CURRENT_SOURCE_DIR}/lib/SRC/Eden/EdenMath.c
@@ -177,6 +133,8 @@ set(ARTOOLKIT_SOURCES
   ${CMAKE_CURRENT_SOURCE_DIR}/lib/SRC/Eden/EdenTime.c
   ${CMAKE_CURRENT_SOURCE_DIR}/lib/SRC/Eden/EdenUtil.c
   ${CMAKE_CURRENT_SOURCE_DIR}/lib/SRC/Eden/glm.c
+  ${CMAKE_CURRENT_SOURCE_DIR}/lib/SRC/Eden/gluttext/glutbitmap.h
+  ${CMAKE_CURRENT_SOURCE_DIR}/lib/SRC/Eden/gluttext/glutstroke.h
   ${CMAKE_CURRENT_SOURCE_DIR}/lib/SRC/Eden/gluttext/glut_8x13.c
   ${CMAKE_CURRENT_SOURCE_DIR}/lib/SRC/Eden/gluttext/glut_9x15.c
   ${CMAKE_CURRENT_SOURCE_DIR}/lib/SRC/Eden/gluttext/glut_bitmap.c
@@ -191,82 +149,179 @@ set(ARTOOLKIT_SOURCES
   ${CMAKE_CURRENT_SOURCE_DIR}/lib/SRC/Eden/gluttext/glut_tr10.c
   ${CMAKE_CURRENT_SOURCE_DIR}/lib/SRC/Eden/gluttext/glut_tr24.c
   ${CMAKE_CURRENT_SOURCE_DIR}/lib/SRC/Eden/readtex.c
-  ${CMAKE_CURRENT_SOURCE_DIR}/lib/SRC/Util/profile.c
-  ${CMAKE_CURRENT_SOURCE_DIR}/lib/SRC/Util/thread_sub.c
+  ${CMAKE_CURRENT_SOURCE_DIR}/lib/SRC/Gl/argBase.c
+  ${CMAKE_CURRENT_SOURCE_DIR}/lib/SRC/Gl/argDraw.c
+  ${CMAKE_CURRENT_SOURCE_DIR}/lib/SRC/Gl/argDrawImage.c
+  ${CMAKE_CURRENT_SOURCE_DIR}/lib/SRC/Gl/argDrawMode.c
+  ${CMAKE_CURRENT_SOURCE_DIR}/lib/SRC/Gl/argFunction.c
+  ${CMAKE_CURRENT_SOURCE_DIR}/lib/SRC/Gl/argPrivate.h
+  ${CMAKE_CURRENT_SOURCE_DIR}/lib/SRC/Gl/argWindow.c
   ${CMAKE_CURRENT_SOURCE_DIR}/lib/SRC/Gl/gsub_mtx.c)
 SET(ARTOOLKIT_GL_SOURCES_DESKTOP
   ${CMAKE_CURRENT_SOURCE_DIR}/lib/SRC/Gl/gsub_lite.c)
 SET(ARTOOLKIT_GL_SOURCES_MOBILE
   ${CMAKE_CURRENT_SOURCE_DIR}/lib/SRC/Gl/glStateCache.c
   ${CMAKE_CURRENT_SOURCE_DIR}/lib/SRC/Gl/glStateCache2.c
+  ${CMAKE_CURRENT_SOURCE_DIR}/lib/SRC/Gl/gsub_es.c
   ${CMAKE_CURRENT_SOURCE_DIR}/lib/SRC/Gl/gsub_es2.c)
+SET(ARTOOLKIT_SOURCES_ANDROID
+  ${CMAKE_CURRENT_SOURCE_DIR}/lib/SRC/ARUtil/android_system_property_get.c)
 SET(ARTOOLKIT_SOURCES_WINDOWS
   ${CMAKE_CURRENT_SOURCE_DIR}/lib/SRC/ARToolKitComponent/ARToolKitComponent.cpp
+  ${CMAKE_CURRENT_SOURCE_DIR}/lib/SRC/ARToolKitComponent/ARToolKitComponent.h
   ${CMAKE_CURRENT_SOURCE_DIR}/lib/SRC/ARToolKitComponent/pch.cpp
-  ${CMAKE_CURRENT_SOURCE_DIR}/lib/SRC/Util/thread_sub_winrt.cpp)
+  ${CMAKE_CURRENT_SOURCE_DIR}/lib/SRC/ARToolKitComponent/pch.h
+  ${CMAKE_CURRENT_SOURCE_DIR}/lib/SRC/ARUtil/thread_sub_winrt.cpp
+  ${CMAKE_CURRENT_SOURCE_DIR}/lib/SRC/ARUtil/thread_sub_winrt.h
+  ${CMAKE_CURRENT_SOURCE_DIR}/lib/SRC/ARgsubD3D/ARgsubD3D.Shared/ArD3dCube.cpp
+  ${CMAKE_CURRENT_SOURCE_DIR}/lib/SRC/ARgsubD3D/ARgsubD3D.Shared/ArD3dCube.h
+  ${CMAKE_CURRENT_SOURCE_DIR}/lib/SRC/ARgsubD3D/ARgsubD3D.Shared/ArD3dDeviceContext.cpp
+  ${CMAKE_CURRENT_SOURCE_DIR}/lib/SRC/ARgsubD3D/ARgsubD3D.Shared/ArD3dDeviceContext.h
+  ${CMAKE_CURRENT_SOURCE_DIR}/lib/SRC/ARgsubD3D/ARgsubD3D.Shared/ArD3dImage.cpp
+  ${CMAKE_CURRENT_SOURCE_DIR}/lib/SRC/ARgsubD3D/ARgsubD3D.Shared/ArD3dImage.h
+  ${CMAKE_CURRENT_SOURCE_DIR}/lib/SRC/ARgsubD3D/ARgsubD3D.Shared/ArD3dIObject.h
+  ${CMAKE_CURRENT_SOURCE_DIR}/lib/SRC/ARgsubD3D/ARgsubD3D.Shared/ArD3dPanel.cpp
+  ${CMAKE_CURRENT_SOURCE_DIR}/lib/SRC/ARgsubD3D/ARgsubD3D.Shared/ArD3dPanel.h
+  ${CMAKE_CURRENT_SOURCE_DIR}/lib/SRC/ARgsubD3D/ARgsubD3D.Shared/Helper.h
+  ${CMAKE_CURRENT_SOURCE_DIR}/lib/SRC/ARgsubD3D/ARgsubD3D.Shared/pch.cpp
+  ${CMAKE_CURRENT_SOURCE_DIR}/lib/SRC/ARgsubD3D/ARgsubD3D.Shared/pch.h
+  ${CMAKE_CURRENT_SOURCE_DIR}/lib/SRC/ARgsubD3D/ARgsubD3D.Shared/ShaderConstantsDefinitons.h
+  ${CMAKE_CURRENT_SOURCE_DIR}/lib/SRC/ARgsubD3D/ARgsubD3D.Shared/SimplePixelShader.hlsl
+  ${CMAKE_CURRENT_SOURCE_DIR}/lib/SRC/ARgsubD3D/ARgsubD3D.Shared/SimpleVertexShader.hlsl
+  ${CMAKE_CURRENT_SOURCE_DIR}/lib/SRC/ARgsubD3D/ARgsubD3D.Shared/SolidColorPixelShader.hlsl)
 SET(ARTOOLKIT_KPM_SOURCES
   ${CMAKE_CURRENT_SOURCE_DIR}/lib/SRC/KPM/FreakMatcher/detectors/DoG_scale_invariant_detector.cpp
+  ${CMAKE_CURRENT_SOURCE_DIR}/lib/SRC/KPM/FreakMatcher/detectors/DoG_scale_invariant_detector.h
   ${CMAKE_CURRENT_SOURCE_DIR}/lib/SRC/KPM/FreakMatcher/detectors/gaussian_scale_space_pyramid.cpp
+  ${CMAKE_CURRENT_SOURCE_DIR}/lib/SRC/KPM/FreakMatcher/detectors/gaussian_scale_space_pyramid.h
   ${CMAKE_CURRENT_SOURCE_DIR}/lib/SRC/KPM/FreakMatcher/detectors/gradients.cpp
+  ${CMAKE_CURRENT_SOURCE_DIR}/lib/SRC/KPM/FreakMatcher/detectors/gradients.h
+  ${CMAKE_CURRENT_SOURCE_DIR}/lib/SRC/KPM/FreakMatcher/detectors/harris-inline.h
   ${CMAKE_CURRENT_SOURCE_DIR}/lib/SRC/KPM/FreakMatcher/detectors/harris.cpp
+  ${CMAKE_CURRENT_SOURCE_DIR}/lib/SRC/KPM/FreakMatcher/detectors/harris.h
+  ${CMAKE_CURRENT_SOURCE_DIR}/lib/SRC/KPM/FreakMatcher/detectors/interpolate.h
   ${CMAKE_CURRENT_SOURCE_DIR}/lib/SRC/KPM/FreakMatcher/detectors/orientation_assignment.cpp
+  ${CMAKE_CURRENT_SOURCE_DIR}/lib/SRC/KPM/FreakMatcher/detectors/orientation_assignment.h
+  ${CMAKE_CURRENT_SOURCE_DIR}/lib/SRC/KPM/FreakMatcher/detectors/pyramid-inline.h
   ${CMAKE_CURRENT_SOURCE_DIR}/lib/SRC/KPM/FreakMatcher/detectors/pyramid.cpp
+  ${CMAKE_CURRENT_SOURCE_DIR}/lib/SRC/KPM/FreakMatcher/detectors/pyramid.h
   ${CMAKE_CURRENT_SOURCE_DIR}/lib/SRC/KPM/FreakMatcher/facade/visual_database_facade.cpp
-  #${CMAKE_CURRENT_SOURCE_DIR}/lib/SRC/KPM/FreakMatcher/facade/visual_database_opencvfacade.cpp
+  ${CMAKE_CURRENT_SOURCE_DIR}/lib/SRC/KPM/FreakMatcher/facade/visual_database_facade.h
   ${CMAKE_CURRENT_SOURCE_DIR}/lib/SRC/KPM/FreakMatcher/framework/date_time.cpp
+  ${CMAKE_CURRENT_SOURCE_DIR}/lib/SRC/KPM/FreakMatcher/framework/date_time.h
+  ${CMAKE_CURRENT_SOURCE_DIR}/lib/SRC/KPM/FreakMatcher/framework/error.h
+  ${CMAKE_CURRENT_SOURCE_DIR}/lib/SRC/KPM/FreakMatcher/framework/exception.h
   ${CMAKE_CURRENT_SOURCE_DIR}/lib/SRC/KPM/FreakMatcher/framework/image.cpp
+  ${CMAKE_CURRENT_SOURCE_DIR}/lib/SRC/KPM/FreakMatcher/framework/image.h
+  ${CMAKE_CURRENT_SOURCE_DIR}/lib/SRC/KPM/FreakMatcher/framework/image_utils.h
   ${CMAKE_CURRENT_SOURCE_DIR}/lib/SRC/KPM/FreakMatcher/framework/logger.cpp
+  ${CMAKE_CURRENT_SOURCE_DIR}/lib/SRC/KPM/FreakMatcher/framework/logger.h
   ${CMAKE_CURRENT_SOURCE_DIR}/lib/SRC/KPM/FreakMatcher/framework/timers.cpp
+  ${CMAKE_CURRENT_SOURCE_DIR}/lib/SRC/KPM/FreakMatcher/framework/timers.h
+  ${CMAKE_CURRENT_SOURCE_DIR}/lib/SRC/KPM/FreakMatcher/homography_estimation/homography_solver.h
+  ${CMAKE_CURRENT_SOURCE_DIR}/lib/SRC/KPM/FreakMatcher/homography_estimation/robust_homography.h
+  ${CMAKE_CURRENT_SOURCE_DIR}/lib/SRC/KPM/FreakMatcher/matchers/binary_hierarchical_clustering.h
+  ${CMAKE_CURRENT_SOURCE_DIR}/lib/SRC/KPM/FreakMatcher/matchers/feature_matcher-inline.h
+  ${CMAKE_CURRENT_SOURCE_DIR}/lib/SRC/KPM/FreakMatcher/matchers/feature_matcher.h
+  ${CMAKE_CURRENT_SOURCE_DIR}/lib/SRC/KPM/FreakMatcher/matchers/feature_point.h
+  ${CMAKE_CURRENT_SOURCE_DIR}/lib/SRC/KPM/FreakMatcher/matchers/feature_store.h
   ${CMAKE_CURRENT_SOURCE_DIR}/lib/SRC/KPM/FreakMatcher/matchers/feature_store_io.cpp
+  ${CMAKE_CURRENT_SOURCE_DIR}/lib/SRC/KPM/FreakMatcher/matchers/feature_store_io.h
   ${CMAKE_CURRENT_SOURCE_DIR}/lib/SRC/KPM/FreakMatcher/matchers/freak.cpp
+  ${CMAKE_CURRENT_SOURCE_DIR}/lib/SRC/KPM/FreakMatcher/matchers/freak.h
+  ${CMAKE_CURRENT_SOURCE_DIR}/lib/SRC/KPM/FreakMatcher/matchers/freak84-inline.h
   ${CMAKE_CURRENT_SOURCE_DIR}/lib/SRC/KPM/FreakMatcher/matchers/hough_similarity_voting.cpp
+  ${CMAKE_CURRENT_SOURCE_DIR}/lib/SRC/KPM/FreakMatcher/matchers/hough_similarity_voting.h
+  ${CMAKE_CURRENT_SOURCE_DIR}/lib/SRC/KPM/FreakMatcher/matchers/keyframe.h
+  ${CMAKE_CURRENT_SOURCE_DIR}/lib/SRC/KPM/FreakMatcher/matchers/kmedoids.h
+  ${CMAKE_CURRENT_SOURCE_DIR}/lib/SRC/KPM/FreakMatcher/matchers/matcher_types.h
+  ${CMAKE_CURRENT_SOURCE_DIR}/lib/SRC/KPM/FreakMatcher/matchers/visual_database-inline.h
+  ${CMAKE_CURRENT_SOURCE_DIR}/lib/SRC/KPM/FreakMatcher/matchers/visual_database.h
   ${CMAKE_CURRENT_SOURCE_DIR}/lib/SRC/KPM/FreakMatcher/matchers/visual_database_io.cpp
+  ${CMAKE_CURRENT_SOURCE_DIR}/lib/SRC/KPM/FreakMatcher/matchers/visual_database_io.h
+  ${CMAKE_CURRENT_SOURCE_DIR}/lib/SRC/KPM/FreakMatcher/matchers/visual_database_types.h
+  ${CMAKE_CURRENT_SOURCE_DIR}/lib/SRC/KPM/FreakMatcher/math/cholesky.h
+  ${CMAKE_CURRENT_SOURCE_DIR}/lib/SRC/KPM/FreakMatcher/math/cholesky_linear_solvers.h
+  ${CMAKE_CURRENT_SOURCE_DIR}/lib/SRC/KPM/FreakMatcher/math/geometry.h
+  ${CMAKE_CURRENT_SOURCE_DIR}/lib/SRC/KPM/FreakMatcher/math/hamming.h
+  ${CMAKE_CURRENT_SOURCE_DIR}/lib/SRC/KPM/FreakMatcher/math/homography.h
+  ${CMAKE_CURRENT_SOURCE_DIR}/lib/SRC/KPM/FreakMatcher/math/indexing.h
+  ${CMAKE_CURRENT_SOURCE_DIR}/lib/SRC/KPM/FreakMatcher/math/linear_algebra.h
+  ${CMAKE_CURRENT_SOURCE_DIR}/lib/SRC/KPM/FreakMatcher/math/linear_solvers.h
   ${CMAKE_CURRENT_SOURCE_DIR}/lib/SRC/KPM/FreakMatcher/math/math_io.cpp
+  ${CMAKE_CURRENT_SOURCE_DIR}/lib/SRC/KPM/FreakMatcher/math/math_io.h
+  ${CMAKE_CURRENT_SOURCE_DIR}/lib/SRC/KPM/FreakMatcher/math/math_utils.h
+  ${CMAKE_CURRENT_SOURCE_DIR}/lib/SRC/KPM/FreakMatcher/math/matrix.h
+  ${CMAKE_CURRENT_SOURCE_DIR}/lib/SRC/KPM/FreakMatcher/math/polynomial.h
+  ${CMAKE_CURRENT_SOURCE_DIR}/lib/SRC/KPM/FreakMatcher/math/quaternion.h
+  ${CMAKE_CURRENT_SOURCE_DIR}/lib/SRC/KPM/FreakMatcher/math/rand.h
+  ${CMAKE_CURRENT_SOURCE_DIR}/lib/SRC/KPM/FreakMatcher/math/robustifiers.h
+  ${CMAKE_CURRENT_SOURCE_DIR}/lib/SRC/KPM/FreakMatcher/utils/feature_drawing.h
+  ${CMAKE_CURRENT_SOURCE_DIR}/lib/SRC/KPM/FreakMatcher/utils/partial_sort.h
+  ${CMAKE_CURRENT_SOURCE_DIR}/lib/SRC/KPM/FreakMatcher/utils/point.h
   ${CMAKE_CURRENT_SOURCE_DIR}/lib/SRC/KPM/kpmFopen.c
+  ${CMAKE_CURRENT_SOURCE_DIR}/lib/SRC/KPM/kpmFopen.h
   ${CMAKE_CURRENT_SOURCE_DIR}/lib/SRC/KPM/kpmHandle.cpp
   ${CMAKE_CURRENT_SOURCE_DIR}/lib/SRC/KPM/kpmMatching.cpp
+  ${CMAKE_CURRENT_SOURCE_DIR}/lib/SRC/KPM/kpmPrivate.h
   ${CMAKE_CURRENT_SOURCE_DIR}/lib/SRC/KPM/kpmRefDataSet.cpp
   ${CMAKE_CURRENT_SOURCE_DIR}/lib/SRC/KPM/kpmResult.cpp
-  ${CMAKE_CURRENT_SOURCE_DIR}/lib/SRC/KPM/kpmUtil.cpp)  
+  ${CMAKE_CURRENT_SOURCE_DIR}/lib/SRC/KPM/kpmUtil.cpp)
 SET(ARTOOLKIT_VIDEO_SOURCES
   ${CMAKE_CURRENT_SOURCE_DIR}/lib/SRC/Video/video.c
   ${CMAKE_CURRENT_SOURCE_DIR}/lib/SRC/Video/video2.c
   ${CMAKE_CURRENT_SOURCE_DIR}/lib/SRC/Video/videoAspectRatio.c
   ${CMAKE_CURRENT_SOURCE_DIR}/lib/SRC/Video/videoSaveImage.c
-  ${CMAKE_CURRENT_SOURCE_DIR}/lib/SRC/VideoDummy/videoDummy.c
-  ${CMAKE_CURRENT_SOURCE_DIR}/lib/SRC/VideoImage/videoImage.c)
-SET(ARTOOLKIT_VIDEO_SOURCES_ANDROID  
-  ${CMAKE_CURRENT_SOURCE_DIR}/lib/SRC/VideoAndroid/cparamSearch.c
-  ${CMAKE_CURRENT_SOURCE_DIR}/lib/SRC/VideoAndroid/nxjson.c
-  ${CMAKE_CURRENT_SOURCE_DIR}/lib/SRC/VideoAndroid/sqlite3.c
-  ${CMAKE_CURRENT_SOURCE_DIR}/lib/SRC/VideoAndroid/videoAndroid.c)
-SET(ARTOOLKIT_VIDEO_SOURCES_IPHONE
-  ${CMAKE_CURRENT_SOURCE_DIR}/lib/SRC/VideoiPhone/CameraVideo.m
-  ${CMAKE_CURRENT_SOURCE_DIR}/lib/SRC/VideoiPhone/cparams.c
-  ${CMAKE_CURRENT_SOURCE_DIR}/lib/SRC/VideoiPhone/MovieVideo.m
-  ${CMAKE_CURRENT_SOURCE_DIR}/lib/SRC/VideoiPhone/videoiPhone.m)
-SET(ARTOOLKIT_VIDEO_SOURCES_MACOSX
-  ${CMAKE_CURRENT_SOURCE_DIR}/lib/SRC/VideoQuickTime/ARVideoSettingsController.m
-  ${CMAKE_CURRENT_SOURCE_DIR}/lib/SRC/VideoQuickTime/videoQuickTime.c
-  ${CMAKE_CURRENT_SOURCE_DIR}/lib/SRC/VideoQuickTime/videoQuickTimeMovie.c
-  ${CMAKE_CURRENT_SOURCE_DIR}/lib/SRC/VideoQuickTime7/QTKitVideo.m
-  ${CMAKE_CURRENT_SOURCE_DIR}/lib/SRC/VideoQuickTime7/videoQuickTime7.m)
+  ${CMAKE_CURRENT_SOURCE_DIR}/lib/SRC/Video/Dummy/videoDummy.c
+  ${CMAKE_CURRENT_SOURCE_DIR}/lib/SRC/Video/Dummy/videoDummy.h
+  ${CMAKE_CURRENT_SOURCE_DIR}/lib/SRC/Video/Image/videoImage.c
+  ${CMAKE_CURRENT_SOURCE_DIR}/lib/SRC/Video/Image/videoImage.h
+  ${CMAKE_CURRENT_SOURCE_DIR}/lib/SRC/Video/cparamSearch.c
+  ${CMAKE_CURRENT_SOURCE_DIR}/lib/SRC/Video/cparamSearch.h
+  ${CMAKE_CURRENT_SOURCE_DIR}/lib/SRC/Video/nxjson.c
+  ${CMAKE_CURRENT_SOURCE_DIR}/lib/SRC/Video/nxjson.h
+  ${CMAKE_CURRENT_SOURCE_DIR}/lib/SRC/Video/videoLuma.c
+  ${CMAKE_CURRENT_SOURCE_DIR}/lib/SRC/Video/videoRGBA.c
+)
+SET(ARTOOLKIT_VIDEO_SOURCES_ANDROID
+  ${CMAKE_CURRENT_SOURCE_DIR}/lib/SRC/Video/Android/sqlite3.c
+  ${CMAKE_CURRENT_SOURCE_DIR}/lib/SRC/Video/Android/sqlite3.h
+  ${CMAKE_CURRENT_SOURCE_DIR}/lib/SRC/Video/Android/videoAndroid.c
+  ${CMAKE_CURRENT_SOURCE_DIR}/lib/SRC/Video/Android/videoAndroid.h)
+SET(ARTOOLKIT_VIDEO_SOURCES_APPLE
+  ${CMAKE_CURRENT_SOURCE_DIR}/lib/SRC/Video/AVFoundation/CameraVideo.h
+  ${CMAKE_CURRENT_SOURCE_DIR}/lib/SRC/Video/AVFoundation/CameraVideo.m
+  ${CMAKE_CURRENT_SOURCE_DIR}/lib/SRC/Video/AVFoundation/cparams.c
+  ${CMAKE_CURRENT_SOURCE_DIR}/lib/SRC/Video/AVFoundation/cparams.h
+  ${CMAKE_CURRENT_SOURCE_DIR}/lib/SRC/Video/AVFoundation/MovieVideo.h
+  ${CMAKE_CURRENT_SOURCE_DIR}/lib/SRC/Video/AVFoundation/MovieVideo.m
+  ${CMAKE_CURRENT_SOURCE_DIR}/lib/SRC/Video/AVFoundation/videoAVFoundation.h
+  ${CMAKE_CURRENT_SOURCE_DIR}/lib/SRC/Video/AVFoundation/videoAVFoundation.m
+  ${CMAKE_CURRENT_SOURCE_DIR}/lib/SRC/Video/AVFoundation/videoAVFoundationCameraVideoTookPictureDelegate.h)
 SET(ARTOOLKIT_VIDEO_SOURCES_LINUX
-  ${CMAKE_CURRENT_SOURCE_DIR}/lib/SRC/VideoGStreamer/videoGStreamer.c
-  ${CMAKE_CURRENT_SOURCE_DIR}/lib/SRC/VideoLinux1394Cam/ver1/video1394V1.c
-  ${CMAKE_CURRENT_SOURCE_DIR}/lib/SRC/VideoLinux1394Cam/ver1/video1394V1format.c
-  ${CMAKE_CURRENT_SOURCE_DIR}/lib/SRC/VideoLinux1394Cam/ver1/video1394V1setting.c
-  ${CMAKE_CURRENT_SOURCE_DIR}/lib/SRC/VideoLinux1394Cam/ver2/video1394V2.c
-  ${CMAKE_CURRENT_SOURCE_DIR}/lib/SRC/VideoLinux1394Cam/ver2/video1394V2format.c
-  ${CMAKE_CURRENT_SOURCE_DIR}/lib/SRC/VideoLinux1394Cam/ver2/video1394V2setting.c
-  ${CMAKE_CURRENT_SOURCE_DIR}/lib/SRC/VideoLinuxV4L/videoV4L.c)
+  ${CMAKE_CURRENT_SOURCE_DIR}/lib/SRC/Video/GStreamer/videoGStreamer.c
+  ${CMAKE_CURRENT_SOURCE_DIR}/lib/SRC/Video/GStreamer/videoGStreamer.h
+  ${CMAKE_CURRENT_SOURCE_DIR}/lib/SRC/Video/Video4Linux2/videoV4L2.c
+  ${CMAKE_CURRENT_SOURCE_DIR}/lib/SRC/Video/Video4Linux2/videoV4L2.h
+  ${CMAKE_CURRENT_SOURCE_DIR}/lib/SRC/Video/libdc1394/video1394.c
+  ${CMAKE_CURRENT_SOURCE_DIR}/lib/SRC/Video/libdc1394/video1394.h
+  ${CMAKE_CURRENT_SOURCE_DIR}/lib/SRC/Video/libdc1394/video1394Format.c
+  ${CMAKE_CURRENT_SOURCE_DIR}/lib/SRC/Video/libdc1394/video1394Private.h
+  ${CMAKE_CURRENT_SOURCE_DIR}/lib/SRC/Video/libdc1394/video1394Setting.c)
+SET(ARTOOLKIT_VIDEO_SOURCES_WINDOWS_RT
+  ${CMAKE_CURRENT_SOURCE_DIR}/lib/SRC/Video/WindowsMediaCapture/CaptureFrameGrabber/CaptureFrameGrabber.cpp
+  ${CMAKE_CURRENT_SOURCE_DIR}/lib/SRC/Video/WindowsMediaCapture/CaptureFrameGrabber/CaptureFrameGrabber.h
+  ${CMAKE_CURRENT_SOURCE_DIR}/lib/SRC/Video/WindowsMediaCapture/CaptureFrameGrabber/MediaSink.h
+  ${CMAKE_CURRENT_SOURCE_DIR}/lib/SRC/Video/WindowsMediaCapture/CaptureFrameGrabber/MediaStreamSink.cpp
+  ${CMAKE_CURRENT_SOURCE_DIR}/lib/SRC/Video/WindowsMediaCapture/CaptureFrameGrabber/MediaStreamSink.h
+  ${CMAKE_CURRENT_SOURCE_DIR}/lib/SRC/Video/WindowsMediaCapture/CaptureFrameGrabber/MFIncludes.h
+  ${CMAKE_CURRENT_SOURCE_DIR}/lib/SRC/Video/WindowsMediaCapture/videoWindowsMediaCapture.h
+  ${CMAKE_CURRENT_SOURCE_DIR}/lib/SRC/Video/WindowsMediaCapture/videoWinMC.cpp
+  ${CMAKE_CURRENT_SOURCE_DIR}/lib/SRC/Video/WindowsMediaCapture/WindowsMediaCapture.cpp
+  ${CMAKE_CURRENT_SOURCE_DIR}/lib/SRC/Video/WindowsMediaCapture/WindowsMediaCapture.h
+)
 SET(ARTOOLKIT_VIDEO_SOURCES_WINDOWS
-  ${CMAKE_CURRENT_SOURCE_DIR}/lib/SRC/VideoWinDF/videoWinDF.cpp
-  ${CMAKE_CURRENT_SOURCE_DIR}/lib/SRC/VideoWinDS/videoWinDS.cpp
-  ${CMAKE_CURRENT_SOURCE_DIR}/lib/SRC/VideoWinDSVL/videoWinDSVL.cpp
-  ${CMAKE_CURRENT_SOURCE_DIR}/lib/SRC/VideoWinMC/CaptureFrameGrabber/CaptureFrameGrabber.cpp
-  ${CMAKE_CURRENT_SOURCE_DIR}/lib/SRC/VideoWinMC/CaptureFrameGrabber/MediaStreamSink.cpp
-  ${CMAKE_CURRENT_SOURCE_DIR}/lib/SRC/VideoWinMC/videoWinMC.cpp
-  ${CMAKE_CURRENT_SOURCE_DIR}/lib/SRC/VideoWinMC/WindowsMediaCapture.cpp
-  ${CMAKE_CURRENT_SOURCE_DIR}/lib/SRC/VideoWinMF/LogMediaType.cpp
-  ${CMAKE_CURRENT_SOURCE_DIR}/lib/SRC/VideoWinMF/videoWinMF.cpp)
+  ${CMAKE_CURRENT_SOURCE_DIR}/lib/SRC/Video/WindowsMediaFoundation/BufferLock.h
+  ${CMAKE_CURRENT_SOURCE_DIR}/lib/SRC/Video/WindowsMediaFoundation/LogMediaType.cpp
+  ${CMAKE_CURRENT_SOURCE_DIR}/lib/SRC/Video/WindowsMediaFoundation/videoWindowsMediaFoundation.cpp
+  ${CMAKE_CURRENT_SOURCE_DIR}/lib/SRC/Video/WindowsMediaFoundation/videoWindowsMediaFoundation.h)

@@ -265,16 +265,16 @@ typedef enum {
 #  endif
 
 // Input modules. This is edited by the configure script.
-#undef  ARVIDEO_INPUT_V4L2
+#define  ARVIDEO_INPUT_V4L2
 #undef  ARVIDEO_INPUT_1394CAM
-#undef  ARVIDEO_INPUT_GSTREAMER
-#undef  ARVIDEO_INPUT_IMAGE
+#define  ARVIDEO_INPUT_GSTREAMER
+#define  ARVIDEO_INPUT_IMAGE
 #define ARVIDEO_INPUT_DUMMY
 
 // Default input module. This is edited by the configure script.
 #undef  ARVIDEO_INPUT_DEFAULT_V4L2
 #undef  ARVIDEO_INPUT_DEFAULT_1394
-#undef  ARVIDEO_INPUT_DEFAULT_GSTREAMER
+#define  ARVIDEO_INPUT_DEFAULT_GSTREAMER
 #undef  ARVIDEO_INPUT_DEFAULT_IMAGE
 #undef  ARVIDEO_INPUT_DEFAULT_DUMMY
 
@@ -304,13 +304,13 @@ typedef enum {
 #endif
 
 #ifdef ARVIDEO_INPUT_GSTREAMER
-#define ARVIDEO_INPUT_GSTREAMER_PIXEL_FORMAT   AR_PIXEL_FORMAT_RGB 
+#define ARVIDEO_INPUT_GSTREAMER_PIXEL_FORMAT   AR_PIXEL_FORMAT_RGB
 #endif
 
 
 
 //
-//  For Windows                                              
+//  For Windows
 //
 #ifdef _WIN32
 
@@ -353,14 +353,14 @@ typedef enum {
 
 // Input modules. This is edited by the configure script.
 #define ARVIDEO_INPUT_DUMMY
-#undef  ARVIDEO_INPUT_IMAGE
-#undef  ARVIDEO_INPUT_WINDOWS_MEDIA_FOUNDATION
+#define  ARVIDEO_INPUT_IMAGE
+#define  ARVIDEO_INPUT_WINDOWS_MEDIA_FOUNDATION
 #undef  ARVIDEO_INPUT_WINDOWS_MEDIA_CAPTURE
 
 // Default input module. This is edited by the configure script.
 #undef  ARVIDEO_INPUT_DEFAULT_DUMMY
 #undef  ARVIDEO_INPUT_DEFAULT_IMAGE
-#undef  ARVIDEO_INPUT_DEFAULT_WINDOWS_MEDIA_FOUNDATION
+#define  ARVIDEO_INPUT_DEFAULT_WINDOWS_MEDIA_FOUNDATION
 #undef  ARVIDEO_INPUT_DEFAULT_WINDOWS_MEDIA_CAPTURE
 
 // Other Windows-only configuration.
@@ -385,8 +385,8 @@ typedef enum {
 #endif
 
 //
-//  For Android                                              
-//    Note that Android NDK also defines __linux             
+//  For Android
+//    Note that Android NDK also defines __linux
 //
 
 #if defined ANDROID
@@ -407,7 +407,7 @@ typedef enum {
 
 #undef  ARVIDEO_INPUT_DUMMY
 #define ARVIDEO_INPUT_ANDROID
-#undef  ARVIDEO_INPUT_IMAGE
+#define  ARVIDEO_INPUT_IMAGE
 #undef  ARVIDEO_INPUT_DEFAULT_DUMMY
 #define ARVIDEO_INPUT_DEFAULT_ANDROID
 #undef  ARVIDEO_INPUT_DEFAULT_IMAGE
@@ -425,7 +425,7 @@ typedef enum {
 #endif
 
 //
-//  For macOS                                             
+//  For macOS
 //
 #if __APPLE__
 
@@ -492,7 +492,7 @@ typedef enum {
 #endif
 
 //
-//  Emscripten input                                         
+//  Emscripten input
 //
 
 #ifdef EMSCRIPTEN
@@ -515,7 +515,7 @@ typedef enum {
 //
 // Setup AR_DEFAULT_PIXEL_FORMAT.
 //
- 
+
 #if defined(ARVIDEO_INPUT_DEFAULT_DUMMY)
 #  define AR_DEFAULT_PIXEL_FORMAT   ARVIDEO_INPUT_DUMMY_DEFAULT_PIXEL_FORMAT
 #elif defined(ARVIDEO_INPUT_DEFAULT_V4L2)

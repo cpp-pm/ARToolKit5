@@ -33,7 +33,7 @@
 //  Author(s): Chris Broaddus
 //
 
-//#include "visual_database_io.h"
+#include "visual_database_io.h"
 //#include <framework/filesystem_utils.h>
 //#include <framework/string_utils.h>
 //#include <framework/logger.h>

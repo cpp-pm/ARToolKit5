@@ -4,7 +4,6 @@ include(${CMAKE_CURRENT_SOURCE_DIR}/HunterGate.cmake)
 HunterGate(
     URL "https://github.com/cpp-pm/hunter/archive/v0.23.312.tar.gz"
     SHA1 "42311324f6b859983d833cffc2151d0b86b8bea4"
-    FILEPATH "${CMAKE_CURRENT_SOURCE_DIR}/../Snap/WarpEngine/cmake/HunterConfig.cmake"
 )
 
 project(ARToolkit)
@@ -19,6 +18,12 @@ include_directories(${OpenCV_DIR}/include)
 hunter_add_package(OpenSceneGraph)
 find_package(OpenSceneGraph CONFIG REQUIRED)
 include_directories(${OPENSCENEGRAPH_INCLUDE_DIRS})
+
+hunter_add_package(FreeGLUT)
+find_package(FreeGLUT CONFIG REQUIRED)
+
+hunter_add_package(OpenGL-Registry)
+find_package(OpenGL-Registry CONFIG REQUIRED)
 
 include_directories(${CMAKE_CURRENT_SOURCE_DIR}/include ${CMAKE_CURRENT_SOURCE_DIR}/lib/SRC/KPM/FreakMatcher/)
 
@@ -59,15 +64,24 @@ elseif(UNIX) #assume Linux
   set(ARTOOLKIT_VIDEO_SOURCES_EXTRA ${ARTOOLKIT_VIDEO_SOURCES_LINUX})
 elseif(WIN32)
   set(_is_windows TRUE)
-  set(ARTOOLKIT_SOURCES_EXTRA ${ARTOOLKIT_GL_SOURCES_DESKTOP})
+  set(ARTOOLKIT_SOURCES_EXTRA ${ARTOOLKIT_GL_SOURCES_DESKTOP} ${ARTOOLKIT_SOURCES_WINDOWS})
   set(ARTOOLKIT_VIDEO_SOURCES_EXTRA ${ARTOOLKIT_VIDEO_SOURCES_WINDOWS})
+  hunter_add_package(pthreads-win32)
+  find_package(pthreads-win32 CONFIG REQUIRED)
 endif()
 
 add_library(ARToolkit STATIC ${ARTOOLKIT_SOURCES} ${ARTOOLKIT_KPM_SOURCES} ${ARTOOLKIT_SOURCES_EXTRA})
+
+target_link_libraries(ARToolkit FreeGLUT::freeglut_static OpenGL::Registry-Headers)
+
 add_library(ARToolkitVideo STATIC ${ARTOOLKIT_VIDEO_SOURCES} ${ARTOOLKIT_VIDEO_SOURCES_EXTRA})
 
 if(ANDROID)
   target_link_libraries(ARToolkitVideo CURL::libcurl)
+endif()
+
+if(WIN32)
+  target_link_libraries(ARToolkit pthreads-win32::pthreads)
 endif()
 
 install(DIRECTORY ${CMAKE_CURRENT_SOURCE_DIR}/include/ DESTINATION include)

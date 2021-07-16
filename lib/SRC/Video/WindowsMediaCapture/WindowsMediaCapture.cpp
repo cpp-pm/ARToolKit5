@@ -35,7 +35,7 @@
  *
  */
 
-#include <AR/sys/WindowsMediaCapture.h>
+#include "WindowsMediaCapture.h"
 #include <AR/ar.h>
 #include <ppltasks.h>
 #include <cstdio>

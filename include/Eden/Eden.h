@@ -54,6 +54,8 @@
 #include <stdio.h>
 #ifndef _WIN32 // errno is defined in stdlib.h on Windows.
 #  include <sys/errno.h>
+#else
+#  include <pthread.h>
 #endif 
 #ifdef __ANDROID__
 #  include <android/log.h>

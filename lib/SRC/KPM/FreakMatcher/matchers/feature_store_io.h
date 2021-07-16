@@ -37,6 +37,8 @@
 
 #include "feature_store.h"
 
+#include <string>
+
 namespace vision {
     
     /**
