@@ -173,22 +173,23 @@ SET(ARTOOLKIT_SOURCES_WINDOWS
   ${CMAKE_CURRENT_SOURCE_DIR}/lib/SRC/ARToolKitComponent/pch.h
   ${CMAKE_CURRENT_SOURCE_DIR}/lib/SRC/ARUtil/thread_sub_winrt.cpp
   ${CMAKE_CURRENT_SOURCE_DIR}/lib/SRC/ARUtil/thread_sub_winrt.h
-  ${CMAKE_CURRENT_SOURCE_DIR}/lib/SRC/ARgsubD3D/ARgsubD3D.Shared/ArD3dCube.cpp
-  ${CMAKE_CURRENT_SOURCE_DIR}/lib/SRC/ARgsubD3D/ARgsubD3D.Shared/ArD3dCube.h
-  ${CMAKE_CURRENT_SOURCE_DIR}/lib/SRC/ARgsubD3D/ARgsubD3D.Shared/ArD3dDeviceContext.cpp
-  ${CMAKE_CURRENT_SOURCE_DIR}/lib/SRC/ARgsubD3D/ARgsubD3D.Shared/ArD3dDeviceContext.h
-  ${CMAKE_CURRENT_SOURCE_DIR}/lib/SRC/ARgsubD3D/ARgsubD3D.Shared/ArD3dImage.cpp
-  ${CMAKE_CURRENT_SOURCE_DIR}/lib/SRC/ARgsubD3D/ARgsubD3D.Shared/ArD3dImage.h
-  ${CMAKE_CURRENT_SOURCE_DIR}/lib/SRC/ARgsubD3D/ARgsubD3D.Shared/ArD3dIObject.h
-  ${CMAKE_CURRENT_SOURCE_DIR}/lib/SRC/ARgsubD3D/ARgsubD3D.Shared/ArD3dPanel.cpp
-  ${CMAKE_CURRENT_SOURCE_DIR}/lib/SRC/ARgsubD3D/ARgsubD3D.Shared/ArD3dPanel.h
-  ${CMAKE_CURRENT_SOURCE_DIR}/lib/SRC/ARgsubD3D/ARgsubD3D.Shared/Helper.h
-  ${CMAKE_CURRENT_SOURCE_DIR}/lib/SRC/ARgsubD3D/ARgsubD3D.Shared/pch.cpp
-  ${CMAKE_CURRENT_SOURCE_DIR}/lib/SRC/ARgsubD3D/ARgsubD3D.Shared/pch.h
-  ${CMAKE_CURRENT_SOURCE_DIR}/lib/SRC/ARgsubD3D/ARgsubD3D.Shared/ShaderConstantsDefinitons.h
-  ${CMAKE_CURRENT_SOURCE_DIR}/lib/SRC/ARgsubD3D/ARgsubD3D.Shared/SimplePixelShader.hlsl
-  ${CMAKE_CURRENT_SOURCE_DIR}/lib/SRC/ARgsubD3D/ARgsubD3D.Shared/SimpleVertexShader.hlsl
-  ${CMAKE_CURRENT_SOURCE_DIR}/lib/SRC/ARgsubD3D/ARgsubD3D.Shared/SolidColorPixelShader.hlsl)
+  # ${CMAKE_CURRENT_SOURCE_DIR}/lib/SRC/ARgsubD3D/ARgsubD3D.Shared/ArD3dCube.cpp
+  # ${CMAKE_CURRENT_SOURCE_DIR}/lib/SRC/ARgsubD3D/ARgsubD3D.Shared/ArD3dCube.h
+  # ${CMAKE_CURRENT_SOURCE_DIR}/lib/SRC/ARgsubD3D/ARgsubD3D.Shared/ArD3dDeviceContext.cpp
+  # ${CMAKE_CURRENT_SOURCE_DIR}/lib/SRC/ARgsubD3D/ARgsubD3D.Shared/ArD3dDeviceContext.h
+  # ${CMAKE_CURRENT_SOURCE_DIR}/lib/SRC/ARgsubD3D/ARgsubD3D.Shared/ArD3dImage.cpp
+  # ${CMAKE_CURRENT_SOURCE_DIR}/lib/SRC/ARgsubD3D/ARgsubD3D.Shared/ArD3dImage.h
+  # ${CMAKE_CURRENT_SOURCE_DIR}/lib/SRC/ARgsubD3D/ARgsubD3D.Shared/ArD3dIObject.h
+  # ${CMAKE_CURRENT_SOURCE_DIR}/lib/SRC/ARgsubD3D/ARgsubD3D.Shared/ArD3dPanel.cpp
+  # ${CMAKE_CURRENT_SOURCE_DIR}/lib/SRC/ARgsubD3D/ARgsubD3D.Shared/ArD3dPanel.h
+  # ${CMAKE_CURRENT_SOURCE_DIR}/lib/SRC/ARgsubD3D/ARgsubD3D.Shared/Helper.h
+  # ${CMAKE_CURRENT_SOURCE_DIR}/lib/SRC/ARgsubD3D/ARgsubD3D.Shared/pch.cpp
+  # ${CMAKE_CURRENT_SOURCE_DIR}/lib/SRC/ARgsubD3D/ARgsubD3D.Shared/pch.h
+  # ${CMAKE_CURRENT_SOURCE_DIR}/lib/SRC/ARgsubD3D/ARgsubD3D.Shared/ShaderConstantsDefinitons.h
+  # ${CMAKE_CURRENT_SOURCE_DIR}/lib/SRC/ARgsubD3D/ARgsubD3D.Shared/SimplePixelShader.hlsl
+  # ${CMAKE_CURRENT_SOURCE_DIR}/lib/SRC/ARgsubD3D/ARgsubD3D.Shared/SimpleVertexShader.hlsl
+  # ${CMAKE_CURRENT_SOURCE_DIR}/lib/SRC/ARgsubD3D/ARgsubD3D.Shared/SolidColorPixelShader.hlsl
+  )
 SET(ARTOOLKIT_KPM_SOURCES
   ${CMAKE_CURRENT_SOURCE_DIR}/lib/SRC/KPM/FreakMatcher/detectors/DoG_scale_invariant_detector.cpp
   ${CMAKE_CURRENT_SOURCE_DIR}/lib/SRC/KPM/FreakMatcher/detectors/DoG_scale_invariant_detector.h
